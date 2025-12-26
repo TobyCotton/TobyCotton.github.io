@@ -37,3 +37,20 @@ body{
 	height:128px;
 	margin: 10px 15px 10px 0;
 }
+
+#nav-list{
+	margin-top: 10px;
+}
+
+#nav-list a{
+	color: #E2E2B6;
+	text-align: center;
+}
+
+#nav-list a:hover {
+	background: #021526;
+}
+
+#nav-list a span {
+	font-size: 1.8em;
+}
