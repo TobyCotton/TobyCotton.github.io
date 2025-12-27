@@ -1,10 +1,12 @@
-body{
+body
+{
 	font-size: 16px;
 	color: #E2E2B6;
 	background-color: #6EACDA;
 	font-family: "Montserrat", sans-serif;
 }
-.navbar-brand{
+.navbar-brand
+{
 	padding-top: 25px;
 }
 
@@ -16,22 +18,26 @@ body{
 	font-size: 2.0em;
 }
 
-.navbar-brand h1, .navbar-brand h2{
+.navbar-brand h1, .navbar-brand h2
+{
 	color: #E2E2B6;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #222;
 }
 
-.navbar-brand a:hover, .navbar-brand a:focus {
+.navbar-brand a:hover, .navbar-brand a:focus 
+{
 	text-decoration: none;
 }
 
-#header-nav{
+#header-nav
+{
 	background-color: #03346E;
 	border-radius: 0;
 	border: 0;
 }
-#logo-img{
+#logo-img
+{
 	background: url('../images/Logo image.png');
 	width:128px;
 	height:128px;
@@ -42,15 +48,163 @@ body{
 	margin-top: 10px;
 }
 
-#nav-list a{
+#nav-list a
+{
 	color: #E2E2B6;
 	text-align: center;
 }
 
-#nav-list a:hover {
+#nav-list a:hover 
+{
 	background: #021526;
 }
 
-#nav-list a span {
+#nav-list a span 
+{
 	font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar
+{
+	border: 2px solid #6EACDA;
+}
+
+.navbar-header button.navbar-toggle
+{
+	clear:both;
+	margin-top: -30px;
+}
+.container .jumbotron
+{
+	box-shadow: 0 0 50px #6EACDA;
+	border: 2px solid #6EACDA;
+}
+
+#Projects-tile, #Experience-tile
+{
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position:relative;
+	border: 2px solid #6EACDA;
+	overflow: hidden;
+}
+
+#Projects-tile:hover, #Experience-tile:hover
+{
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#Projects-tile
+{
+	background: url("../images/PlaceholderTileProject.jpg");
+	background-position: center;
+}
+
+#Experience-tile
+{
+	background: url("../images/PlaceholderTileExperience.jpg");
+	background-position: center;
+}
+
+#Projects-tile span, #Experience-tile span
+{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #fff;
+	opacity: .8em;
+}
+.panel-footer
+{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #03346E;
+	border-top: 0;
+}
+
+.panel-footer section
+{
+	margin-bottom: 30px;
+	text-align: center;
+}
+.panel-footer section:nth-child(2)
+{
+	margin-bottom: 0;
+}
+
+.panel-footer section hr
+{
+	width: 50%;
+}
+#contactInformation > span, #designInformation > span
+{
+	font-weight: bold;
+}
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+	.container .jumbotron{
+		background: url("../images/placeholder1200.png");
+		height: 675px;
+	}
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.container .jumbotron{
+		background: url("../images/placeholder992.png");
+		height: 558px;
+	}
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-brand h2 { 
+    font-size: 20px;
+    margin-top: 12px;
+  }
+	.container .jumbotron{
+		background: url("../images/placeholder768.png");
+		height: 432px;
+	}
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { 
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand h2 { 
+    font-size: 3vw;
+    margin-top: 12px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+  .container .jumbotron{
+	margin-top: 30px;
+	padding:0;
+  }
+	#Projects-tile, #Experience-tile
+	{
+		width: 444px;
+		margin: 0 auto 15px;
+	}
 }
