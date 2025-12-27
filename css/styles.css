@@ -213,7 +213,7 @@ body
 {
 	#Projects-tile, #Experience-tile
 	{
-		width: 200px;
+		width: 100%;
 		margin: 0 auto 15px;
 	}
 }
