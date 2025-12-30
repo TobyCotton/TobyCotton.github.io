@@ -148,6 +148,11 @@ body
 	font-weight: bold;
 }
 
+#nav-list>.active>a
+{
+	background-color: #021526 ;
+}
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 	.container .jumbotron{
