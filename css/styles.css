@@ -98,13 +98,13 @@ body
 
 #Projects-tile
 {
-	background: url("../images/PlaceholderTileProject.jpg");
+	background: url("../images/TileProject.jpg");
 	background-position: center;
 }
 
 #Experience-tile
 {
-	background: url("../images/PlaceholderTileExperience.jpg");
+	background: url("../images/TileExperience.jpg");
 	background-position: center;
 }
 
@@ -156,7 +156,7 @@ body
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 	.container .jumbotron{
-		background: url("../images/placeholder1200.png");
+		background: url("../images/jumbotron1200.jpg");
 		height: 675px;
 	}
 }
@@ -164,7 +164,7 @@ body
 /********** Medium devices only **********/
 @media (min-width: 992px) and (max-width: 1199px) {
 	.container .jumbotron{
-		background: url("../images/placeholder992.png");
+		background: url("../images/jumbotron992.jpg");
 		height: 558px;
 	}
 }
@@ -176,7 +176,7 @@ body
     margin-top: 12px;
   }
 	.container .jumbotron{
-		background: url("../images/placeholder768.png");
+		background: url("../images/jumbotron768.jpg");
 		height: 432px;
 	}
 }
