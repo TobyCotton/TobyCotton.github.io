@@ -1,1 +1,6 @@
-var x = "Hello world"
+document.addEventListener("DOMContentLoaded",
+	function(event)
+	{
+		var x = "Hello world";
+	}
+);
