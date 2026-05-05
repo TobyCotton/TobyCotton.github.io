@@ -1,7 +1,7 @@
 body
 {
-	font-size: 16px;
-	color: #E2E2B6;
+	font-size: 18px;
+	color: #0d1f3c;
 	background-color: #6EACDA;
 	font-family: "Montserrat", sans-serif;
 }
@@ -153,6 +153,10 @@ body
 	background-color: #021526 ;
 }
 
+.panel-footer div 
+{
+	color: #E2E2B6;
+}
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 	.container .jumbotron{
