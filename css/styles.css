@@ -173,6 +173,12 @@ body
 	color: #E2E2B6;
 }
 
+.imageNextToText {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /********** Large devices only **********/
 @media (min-width: 1200px) {
 	.container .jumbotron {
