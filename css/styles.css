@@ -173,10 +173,17 @@ body
 	color: #E2E2B6;
 }
 
-.imageNextToText {
+.imageNextToText 
+{
     width: 100%;
     height: auto;
     display: block;
+}
+
+.vertical-center 
+{
+    display: flex;
+    align-items: center;
 }
 
 /********** Large devices only **********/
@@ -236,6 +243,9 @@ body
 		width: 444px;
 		margin: 0 auto 15px;
 	}
+	.vertical-center {
+    	flex-direction: column;
+    }
 }
 
 @media (max-width: 479px) {
