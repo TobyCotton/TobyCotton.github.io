@@ -120,6 +120,11 @@ body
 	background: url("../images/FYP.jpg");
 	background-position: center;
 }
+#DNDTownSim-tile
+{
+	background: url("../images/TileMap.jpg");
+	background-position: center;
+}
 
 .generalUseTile span
 {
@@ -185,6 +190,11 @@ body
 {
     display: flex;
     align-items: center;
+}
+
+h2
+{
+	text-align: center;
 }
 
 /********** Large devices only **********/
