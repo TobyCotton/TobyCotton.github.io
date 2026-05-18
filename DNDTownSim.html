@@ -62,15 +62,28 @@
 		</nav>
 	</header>
 <div id="main-content" class="container">
-	<h2>The beginning of it all</h2>
 	<div id="home-tiles" class="row text-center vertical-center">
-		<div class="col-sm-6 col-xs-12">
-			<img src="images/TileMap.jpg" class = "imageNextToText">
+		<div class="imageTextCombo">
+			<h3>The beginning of it all</h2>
+			<div class="col-sm-6 col-xs-12">
+				<img src="images/TileMap.jpg" class = "imageNextToText">
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<p>As I said in my Final year project page I wanted to see if I could take GOAP further and use it to make an adventurer board for dnd. This requiring using GOAP AI to simulate the villagers and have them go around running a dungeons and dragons town to make a more immersive experience for a campaign which revolves around an adventurers guild in one area.<br/></p>
+				<p>In this vein this is why I have started this project. The main skills I want to take away from this are 3 fold: firstly gain experience transferring and converting Unity code from a 3d world to a 2d world; secondly refresh my memory on AI pathing algorithms which I touched upon in my mobile simulation project on my github; finally make a product which feels human to use and with a little effort usable for any dm who can make there town in the simulator.</p>
+				<p>So as any good project needs I needed a starting point which for me was first making the grid itself. This seemed the most logical for me as no point placing anything into a world if it has nothing to stand on. To this end I Followed the youtube guide: <a href="https://www.youtube.com/watch?v=kkAjpQAM-jE" target="_blank"><span>Create a grid in Unity - Perfect for tactics or turn-based games!</span></a> by Tarodev to accomplish this.</p>
+			</div>
 		</div>
-		<div class="col-sm-6 col-xs-12">
-			<p>As I said in my Final year project page I wanted to see if I could take GOAP further and use it to make an adventurer board for dnd. This requiring using GOAP AI to simulate the villagers and have them go around running a dungeons and dragons town to make a more immersive experience for a campaign which revolves around an adventurers guild in one area.<br/></p>
-			<p>In this vein this is why I have started this project. The main skills I want to take away from this are 3 fold: firstly gain experience transferring and converting Unity code from a 3d world to a 2d world; secondly refresh my memory on AI pathing algorithms which I touched upon in my mobile simulation project on my github; finally make a product which feels human to use and with a little effort usable for any dm who can make there town in the simulator.</p>
-			<p>So as any good project needs I needed a starting point which for me was first making the grid itself. This seemed the most logical for me as no point placing anything into a world if it has nothing to stand on. To this end I Followed the youtube guide: <a href="https://www.youtube.com/watch?v=kkAjpQAM-jE" target="_blank"><span>Create a grid in Unity - Perfect for tactics or turn-based games!</span></a> by Tarodev to accomplish this.</p>
+		<div class="imageTextCombo">
+			<h3>Adding in roads and an AI</h3>
+			<div class="col-sm-6 col-xs-12">
+				<p>My goal today was simple. Add in a AI which I can add movement to later and some walls to the tileMap</p>
+				<p>To make the walls I created an Enum which will store all the types which a tile could be currently. This has been done to make the pathing algorithm later easier to implement. To then create the different rendering style I added a hidden object to the tile in which gets activated when you left click on a tile turning it into a road. This has allowed quick road placement alongside the drag feature while left click was held down.</p>
+				<p>The ai was just made for rendering today and added to the -1 z layer so it is spawned at the top of the current map. This will be a simple circle for the minute however might change in the future.</p>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<img src="images/TileMap2.jpg" class = "imageNextToText">
+			</div>
 		</div>
 	</div>
 </div>

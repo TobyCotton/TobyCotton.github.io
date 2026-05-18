@@ -190,11 +190,18 @@ body
 {
     display: flex;
     align-items: center;
+	flex-wrap: wrap;
 }
 
-h2
+h3,h2
 {
 	text-align: center;
+}
+
+.imageTextCombo
+{
+	margin: 8px;
+	width: 100%;
 }
 
 /********** Large devices only **********/
