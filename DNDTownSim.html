@@ -85,6 +85,16 @@
 				<img src="images/TileMap2.jpg" class = "imageNextToText">
 			</div>
 		</div>
+		<div class="imageTextCombo">
+			<h3>Adding functionality to AI and Roads</h2>
+			<div class="col-sm-6 col-xs-12">
+				<img src="images/TileMap3.jpg" class = "imageNextToText">
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<p>The next goal which needed to be overcome was having the ai moved to specified locations. This is so when passing positions into tasks they are able to reach the destinations they are required to. This was a fairly easy task to accomplish and was just done with a MoveTowards command in the update function of the baseAI. To allow for spefic ai to move a highlighted functionality was added to the ai as well.</p>
+				<p>In the same vein. To get the ai to move faster when on roads we pass the gridManager through to the ai which then allows it to check if the current tile it is on is a road (And if so to move 2 the speed along it). This functionality will be later used also for stopping and pathing the ai around buildings.</p>
+			</div>
+		</div>
 	</div>
 </div>
 <footer class="panel-footer">
