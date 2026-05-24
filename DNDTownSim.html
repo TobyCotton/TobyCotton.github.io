@@ -95,6 +95,16 @@
 				<p>In the same vein. To get the ai to move faster when on roads we pass the gridManager through to the ai which then allows it to check if the current tile it is on is a road (And if so to move 2 the speed along it). This functionality will be later used also for stopping and pathing the ai around buildings.</p>
 			</div>
 		</div>
+		<div class="imageTextCombo">
+			<h3>Refactoring Grid manager and adding in camera functionality</h3>
+			<div class="col-sm-6 col-xs-12">
+				<p>As I am plannign to implement HPA-A* pathing I needed to do a small refactoring of the grid manager to allow this. In this case the main difference was I needed to split the grid into chunks of equal sizes to use in this algorithm later</p>
+				<p>This then came with another problem - the grid was now to big to see the starting character to check functionality. In this vein I added in camera zoom and movement functionality so now the camera can be moved around the scene.</p>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<img src="images/TileMap4.jpg" class = "imageNextToText">
+			</div>
+		</div>
 	</div>
 </div>
 <footer class="panel-footer">
