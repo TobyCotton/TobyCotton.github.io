@@ -64,13 +64,13 @@
 <div id="main-content" class="container">
 	<div id="home-tiles" class="row text-center vertical-center">
 		<div class="imageTextCombo">
-			<h3>The beginning of it all</h2>
+			<h3>The beginning of it all</h3>
 			<div class="col-sm-6 col-xs-12">
 				<img src="images/TileMap.jpg" class = "imageNextToText">
 			</div>
 			<div class="col-sm-6 col-xs-12">
 				<p>As I said in my Final year project page I wanted to see if I could take GOAP further and use it to make an adventurer board for dnd. This requiring using GOAP AI to simulate the villagers and have them go around running a dungeons and dragons town to make a more immersive experience for a campaign which revolves around an adventurers guild in one area.<br/></p>
-				<p>In this vein this is why I have started this project. The main skills I want to take away from this are 3 fold: firstly gain experience transferring and converting Unity code from a 3d world to a 2d world; secondly refresh my memory on AI pathing algorithms which I touched upon in my mobile simulation project on my github; finally make a product which feels human to use and with a little effort usable for any dm who can make there town in the simulator.</p>
+				<p>In this vein this is why I have started this project. The main skills I want to take away from this are 3 fold: firstly gain experience transferring and converting Unity code from a 3d world to a 2d world; secondly learn how to safetly implement AI to increase performance while learning; finally make a product which feels human to use and with a little effort usable for any dm who can make there town in the simulator.</p>
 				<p>So as any good project needs I needed a starting point which for me was first making the grid itself. This seemed the most logical for me as no point placing anything into a world if it has nothing to stand on. To this end I Followed the youtube guide: <a href="https://www.youtube.com/watch?v=kkAjpQAM-jE" target="_blank"><span>Create a grid in Unity - Perfect for tactics or turn-based games!</span></a> by Tarodev to accomplish this.</p>
 			</div>
 		</div>
@@ -86,7 +86,7 @@
 			</div>
 		</div>
 		<div class="imageTextCombo">
-			<h3>Adding functionality to AI and Roads</h2>
+			<h3>Adding functionality to AI and Roads</h3>
 			<div class="col-sm-6 col-xs-12">
 				<img src="images/TileMap3.jpg" class = "imageNextToText">
 			</div>
@@ -103,6 +103,28 @@
 			</div>
 			<div class="col-sm-6 col-xs-12">
 				<img src="images/TileMap4.jpg" class = "imageNextToText">
+			</div>
+		</div>
+		<div class="imageTextCombo">
+			<h3>Pathfinding</h3>
+			<div class="col-sm-6 col-xs-12">
+				<img src="images/TileMap5.jpg" class = "imageNextToText">
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<p>So now the largest hurdle before getting to goap and town simulation. Pathfinding. As this would not be the focus of the project I decided it would be the perfect time to use AI to speed up the process. For this like I said previously I wanted to implement HPA-A* - Hierarchal pathfinding A* - as I need the pathing to be highly optimised. This is due to the fact I will be hoping to simulate at least 500 AI doing actions at once in the final product which most of there time will be taken up in this pathing algorithm</p>
+				<p>So lets starts with the benefits: Firstly the program can instantly know if there is no valid path. Unlike a* which will search the entire grid before coming to this conclusion hpa uses the region edges to be able to tell whether an area is even accessible from your current location; Secondly it reduces the number of tiles that the a* algorithm has to search due to it only needing to scan the regions which are a part of the optimal path on the grid;Finally its just that much faster. On smaller maps it is slightly faster but as maps get larger it exponentially becomes more optimal to use this instead of regular A*.</p>
+				<p>Nows the downsides. Like anything in programming there is always a downside to 1 algorithm over another. The major downside to this is that we need to calculate the gates and vertexs between each region of the map once we are happy with building placement - which in my case doesn't matter as once the world has been built the walkable terrain will be static anyway. The second downside is it can also only be used properly for a grided map going horizontal and vertical. This will have a slight impact on the ai's speed but one I'm willing to take for program run time and reducing bugs in the future.</p>
+				<p>Anyway to do implementation after my rework in the previous section it was relatively easy to get implemented only taking about 3 hours to get implemented with claude. The main time sync here being keeping coding standards clean and readable - claude loves to use var which is terrible for debugging later. and some bug fixing at the other end. Once that had been sorted though got it all working in game and it looked great even with multiple AI around the screen.</p>
+			</div>
+		</div>
+		<div class="imageTextCombo">
+			<h3>Save system</h3>
+			<div class="col-sm-6 col-xs-12">
+				<p>The save system wasn't to bad to implement. All we needed to do was save out non default tiles which came down to just the following requirements: was a building in this location, was that building the origin point of its structure and is it a road</p>
+				<p>After saving out these details it worked pretty much harm free. In the future we will need to save out more data like stuff for the AI and information about whats stored in buildings but for now while pathing is my greatest concern this system will work</p>
+			</div>
+			<div class="col-sm-6 col-xs-12">
+				<img src="images/TileMap6.jpg" class = "imageNextToText">
 			</div>
 		</div>
 	</div>
